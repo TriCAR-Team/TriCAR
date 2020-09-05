@@ -45,7 +45,6 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
         btnEliminar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        btnRegistrar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
@@ -57,6 +56,16 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         Tabla_Datos = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        txtID = new javax.swing.JTextField();
+        ComboBxGen = new javax.swing.JComboBox<>();
+        txtRuta = new javax.swing.JTextField();
+        txtCondi = new javax.swing.JTextField();
+        CheckBoxEqui = new javax.swing.JCheckBox();
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -123,14 +132,6 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
         jLabel2.setText("Edad");
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, -1));
 
-        btnRegistrar.setText("Registrar");
-        btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegistrarActionPerformed(evt);
-            }
-        });
-        jPanel4.add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 60, -1, -1));
-
         jLabel3.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("REGISTRO DE PASAJEROS");
@@ -178,22 +179,46 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Nombre", "Edad", "Numero de Autobus", "Numero de Asiento"
+                "ID", "Nombre", "Edad", "Género", "Num Bus", "Num Asiento ", "Num Ruta", "Condición", "Equipaje"
             }
         ));
         jScrollPane1.setViewportView(Tabla_Datos);
 
-        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, -1, -1));
+        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 630, 210));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_tricar/ICONOS/Recurso 4.png"))); // NOI18N
         jLabel4.setText("jLabel4");
         jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 600));
 
+        jLabel7.setText("ID");
+        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 380, -1, -1));
+
+        jLabel8.setText("Género");
+        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 410, -1, -1));
+
+        jLabel9.setText("Num Ruta");
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 450, -1, -1));
+
+        jLabel10.setText("Condición Médica");
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 480, 100, -1));
+
+        jLabel11.setText("Equipaje");
+        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 520, -1, -1));
+        jPanel4.add(txtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 370, 160, -1));
+
+        ComboBxGen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Género", "Femenino", "Masculino", "Otro" }));
+        jPanel4.add(ComboBxGen, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, -1, -1));
+        jPanel4.add(txtRuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 440, 170, -1));
+        jPanel4.add(txtCondi, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 480, 170, -1));
+
+        CheckBoxEqui.setText("Equipaje");
+        jPanel4.add(CheckBoxEqui, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 520, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 898, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 1044, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -202,7 +227,27 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+     void limpiar(){
+    this.txtCondi.setText("");
+    this.txtEdad.setText("");
+    this.txtID.setText("");
+    this.txtNombre.setText("");
+    this.txtRuta.setText("");
+    }
+       void presentar(int i){
+    if(i>=0 && i<arreglo.size()){
+    this.txtID.setText(String.valueOf(arreglo.get(i).getId()));
+    this.txtNombre.setText(arreglo.get(i).getNombre()); 
+    this.txtEdad.setText(String.valueOf(arreglo.get(i).getEdad()));
+    this.ComboBxGen.setSelectedItem(arreglo.get(i).getGenero());
+    this.cbNum_Autobus.setSelectedItem(arreglo.get(i).getNum_Autobus());
+    this.cbNum_Asiento.setSelectedItem(arreglo.get(i).getNum_Asiento());
+    this.txtRuta.setText(String.valueOf(arreglo.get(i).getNum_ruta()));
+    this.txtCondi.setText(arreglo.get(i).getCondi());
+    this.CheckBoxEqui.setSelected(arreglo.get(i).isEquipaje()); 
+  
+    }
+    }
     private void txtEdadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEdadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtEdadActionPerformed
@@ -210,51 +255,23 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
           DefaultTableModel modelo=(DefaultTableModel) Tabla_Datos.getModel();
  
-        Object []fila=new Object[4];
-
-        fila[0]=txtNombre.getText();
-        fila[1]=txtEdad.getText();
-         fila[2]=(String)cbNum_Autobus.getSelectedItem();
-          fila[3]=(String)cbNum_Asiento.getSelectedItem();
-        
-       
+        Object []fila=new Object[9];
+        fila[0]=txtID.getText();
+        fila[1]=txtNombre.getText();
+        fila[2]=txtEdad.getText();
+        fila[3]=(String)ComboBxGen.getSelectedItem();
+        fila[4]=(String)cbNum_Autobus.getSelectedItem();
+        fila[5]=(String)cbNum_Asiento.getSelectedItem();
+        fila[6]=txtRuta.getText(); 
+        fila[7]=txtCondi.getText(); 
+        fila[8]=CheckBoxEqui.isSelected();
     
+       JOptionPane.showMessageDialog(this, "Registro realizado correctamente");
         modelo.addRow(fila);
-
         Tabla_Datos.setModel(modelo);
 
+
     }//GEN-LAST:event_btnAgregarActionPerformed
-
-    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
-         Pasajeros triCar=new Pasajeros();
-        triCar.Nombre=this.txtNombre.getText();
-      
-        triCar.Num_Autobus=this.cbNum_Autobus.getItemCount();
-        triCar.Num_Asiento=this.cbNum_Asiento.getItemCount();
-       
-       
-        arreglo.add(triCar);
-        limpiar ();
-        pos=arreglo.size()-1;
-        }
-        void limpiar(){
-            this.txtNombre.setText("");
-            this.txtEdad.setText("");
-            
-           
-           
-            
-        }
-        void presentar(int i){
-
-            if(i>=0 && i<arreglo.size()){
-                this.txtNombre.setText(arreglo.get(i).getNombre());
-               
-               
-              
-            }
-
-    }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         presentar(0);
@@ -345,10 +362,11 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox CheckBoxEqui;
+    private javax.swing.JComboBox<String> ComboBxGen;
     private javax.swing.JTable Tabla_Datos;
     private javax.swing.JButton btnAgregar;
     private javax.swing.JButton btnEliminar;
-    private javax.swing.JButton btnRegistrar;
     private javax.swing.JComboBox<String> cbNum_Asiento;
     private javax.swing.JComboBox<String> cbNum_Autobus;
     private javax.swing.JButton jButton2;
@@ -358,14 +376,22 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField txtCondi;
     private javax.swing.JTextField txtEdad;
+    private javax.swing.JTextField txtID;
     private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtRuta;
     // End of variables declaration//GEN-END:variables
 }

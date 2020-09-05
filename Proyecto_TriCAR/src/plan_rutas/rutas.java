@@ -56,6 +56,13 @@ public class rutas extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         txtEmpleado = new javax.swing.JTextField();
+        btn_cont = new javax.swing.JButton();
+        btn_elimi = new javax.swing.JButton();
+        btn_act = new javax.swing.JButton();
+        btn_prin = new javax.swing.JButton();
+        btn_ant1 = new javax.swing.JButton();
+        btn_sig = new javax.swing.JButton();
+        btn_fin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -145,6 +152,62 @@ public class rutas extends javax.swing.JFrame {
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 50, 90, -1));
         jPanel1.add(txtEmpleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 50, 240, -1));
 
+        btn_cont.setText("Contar");
+        btn_cont.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_contActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_cont, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 100, -1, -1));
+
+        btn_elimi.setText("Eliminar");
+        btn_elimi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_elimiActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_elimi, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, -1, -1));
+
+        btn_act.setText("Actualizar");
+        btn_act.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_actActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_act, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, -1, -1));
+
+        btn_prin.setText("Principio");
+        btn_prin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_prinActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_prin, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, -1, -1));
+
+        btn_ant1.setText("Ant.");
+        btn_ant1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ant1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_ant1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 130, -1, -1));
+
+        btn_sig.setText("Sig.");
+        btn_sig.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_sigActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_sig, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 130, -1, -1));
+
+        btn_fin.setText("Fin.");
+        btn_fin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_finActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_fin, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 130, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -163,6 +226,8 @@ public class rutas extends javax.swing.JFrame {
     //Variables
     ArrayList<ruta> rtList = new ArrayList();
     DefaultTableModel model;
+    
+    int posi=0;
     
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -208,6 +273,96 @@ public class rutas extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jTable1MouseClicked
 
+    private void btn_contActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_contActionPerformed
+       JOptionPane.showMessageDialog(this, rtList.size());
+    }//GEN-LAST:event_btn_contActionPerformed
+
+    private void btn_actActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_actActionPerformed
+        int tabla=this.jTable1.getSelectedRow();
+        rtList.get(tabla).setNoRuta(Integer.valueOf(this.TxtNoRuta.getText()));
+        rtList.get(tabla).setOrigen(this.TxtOrigen.getText());
+        rtList.get(tabla).setDestino(this.TxtDestino.getText());
+        rtList.get(tabla).setNoConductor(Integer.valueOf(this.TxtConductor.getText()));
+        rtList.get(tabla).setNoEmpleado(Integer.valueOf(this.txtEmpleado.getText()));
+        rtList.get(tabla).setNoBus(Integer.valueOf(this.TxtBus.getText()));
+        rtList.get(tabla).setFecha(this.TxtFecha.getText());
+        rtList.get(tabla).setHora(Integer.valueOf(this.TxtHora.getText()));
+        
+        model.setValueAt(this.TxtNoRuta.getText(),tabla,0);
+        model.setValueAt(this.TxtOrigen.getText(),tabla,1);
+        model.setValueAt(this.TxtDestino.getText(), tabla, 2);
+        model.setValueAt(this.TxtConductor.getText(),tabla,3);
+        model.setValueAt(this.txtEmpleado.getText(),tabla,4);
+        model.setValueAt(this.TxtBus.getText(),tabla,5);
+        model.setValueAt(this.TxtFecha.getText(),tabla,6);
+        model.setValueAt(this.TxtHora.getText(),tabla,7);
+    }//GEN-LAST:event_btn_actActionPerformed
+
+    private void btn_elimiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_elimiActionPerformed
+        int tabla=this.jTable1.getSelectedRow(); 
+       if (tabla<0){
+            JOptionPane.showMessageDialog(null, "Debe de seleccionar una fila de la tabla");
+
+        }else {
+
+            int confirmar=JOptionPane.showConfirmDialog(null, "Esta seguro que desea eliminar esta fila");
+            if (JOptionPane.OK_OPTION==confirmar){
+
+                model.removeRow(tabla);
+                JOptionPane.showMessageDialog(null, "Registro Eliminado");
+            }
+        }
+        TxtBus.setText("");
+        TxtNoRuta.setText("");
+        TxtOrigen.setText("");
+        TxtDestino.setText("");
+        TxtConductor.setText("");
+        txtEmpleado.setText("");
+        TxtFecha.setText("");
+        TxtHora.setText("");
+    }//GEN-LAST:event_btn_elimiActionPerformed
+
+    private void btn_prinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_prinActionPerformed
+       posi--;
+        if(posi<=0){
+            posi=0;
+        }
+        presentar(posi);
+    }//GEN-LAST:event_btn_prinActionPerformed
+
+    private void btn_ant1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ant1ActionPerformed
+        posi--;
+        if(posi<=0){
+            posi=0;
+        }
+        presentar(posi);  
+    }//GEN-LAST:event_btn_ant1ActionPerformed
+
+    private void btn_sigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sigActionPerformed
+        posi++;
+        if(posi>=rtList.size()){
+            posi=rtList.size()-1;
+        }
+        presentar(posi);  
+    }//GEN-LAST:event_btn_sigActionPerformed
+
+    private void btn_finActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_finActionPerformed
+         presentar(rtList.size()-1);
+         posi=rtList.size()-1;
+    }//GEN-LAST:event_btn_finActionPerformed
+   void presentar(int i){
+    if(i>=0 && i<rtList.size()){
+        this.TxtBus.setText(String.valueOf(rtList.get(i).getNoBus()));
+        this.TxtNoRuta.setText(String.valueOf(rtList.get(i).getNoRuta()));
+        this.TxtOrigen.setText(rtList.get(i).getOrigen());
+        this.TxtDestino.setText(rtList.get(i).getDestino());
+        this.TxtConductor.setText(String.valueOf(rtList.get(i).getNoConductor()));
+        this.txtEmpleado.setText(String.valueOf(rtList.get(i).getNoEmpleado()));
+        this.TxtFecha.setText(rtList.get(i).getFecha());
+        this.TxtHora.setText(String.valueOf(rtList.get(i).getHora())); 
+        
+    }
+    }
     private void PresentarTabla(){
        model.setRowCount(0); 
        for(int i=0; i<rtList.size(); i++){
@@ -269,6 +424,13 @@ public class rutas extends javax.swing.JFrame {
     private javax.swing.JTextField TxtHora;
     private javax.swing.JTextField TxtNoRuta;
     private javax.swing.JTextField TxtOrigen;
+    private javax.swing.JButton btn_act;
+    private javax.swing.JButton btn_ant1;
+    private javax.swing.JButton btn_cont;
+    private javax.swing.JButton btn_elimi;
+    private javax.swing.JButton btn_fin;
+    private javax.swing.JButton btn_prin;
+    private javax.swing.JButton btn_sig;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

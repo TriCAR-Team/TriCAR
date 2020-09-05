@@ -296,9 +296,19 @@ public class registro_buses extends javax.swing.JFrame {
 
     private void btn_elimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_elimActionPerformed
         int tabla=this.jTable1.getSelectedRow();
-        this.arr.remove(tabla);
-        this.buses.removeRow(tabla);
+        if (tabla<0){
+            JOptionPane.showMessageDialog(null, "Debe de seleccionar una fila de la tabla");
 
+        }else {
+
+            int confirmar=JOptionPane.showConfirmDialog(null, "Esta seguro que desea eliminar esta fila");
+            if (JOptionPane.OK_OPTION==confirmar){
+
+                buses.removeRow(tabla);
+                JOptionPane.showMessageDialog(null, "Registro Eliminado");
+            }
+        }
+        
         limpiar();
     }//GEN-LAST:event_btn_elimActionPerformed
 
