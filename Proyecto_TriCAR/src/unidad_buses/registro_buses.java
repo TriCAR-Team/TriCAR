@@ -38,8 +38,6 @@ public class registro_buses extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         txtPlaca = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        txt_numbus = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         txt_año = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
@@ -67,7 +65,6 @@ public class registro_buses extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(900, 600));
         setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -76,38 +73,32 @@ public class registro_buses extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Montserrat", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Número de Placa");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
-        jPanel2.add(txtPlaca, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 160, -1));
-
-        jLabel3.setFont(new java.awt.Font("Montserrat", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Número de Bus");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
-        jPanel2.add(txt_numbus, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 160, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
+        jPanel2.add(txtPlaca, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 160, -1));
 
         jLabel4.setFont(new java.awt.Font("Montserrat", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Año");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
-        jPanel2.add(txt_año, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 160, -1));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+        jPanel2.add(txt_año, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 160, -1));
 
         jLabel5.setFont(new java.awt.Font("Montserrat", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Color");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
-        jPanel2.add(txt_color, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 160, -1));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
+        jPanel2.add(txt_color, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 160, -1));
 
         jLabel6.setFont(new java.awt.Font("Montserrat", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Número de Asientos");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
-        jPanel2.add(txt_numasien, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 160, -1));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
+        jPanel2.add(txt_numasien, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 160, -1));
 
         jLabel7.setFont(new java.awt.Font("Montserrat", 1, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Capacidad de Pasajeros");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
-        jPanel2.add(txt_pasajeros, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 160, -1));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+        jPanel2.add(txt_pasajeros, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 160, -1));
 
         btn_prin.setText("Principo");
         btn_prin.addActionListener(new java.awt.event.ActionListener() {
@@ -123,7 +114,7 @@ public class registro_buses extends javax.swing.JFrame {
                 btn_antActionPerformed(evt);
             }
         });
-        jPanel2.add(btn_ant, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 90, -1, -1));
+        jPanel2.add(btn_ant, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 80, -1, -1));
 
         btn_sig.setText("Sig.");
         btn_sig.addActionListener(new java.awt.event.ActionListener() {
@@ -131,7 +122,7 @@ public class registro_buses extends javax.swing.JFrame {
                 btn_sigActionPerformed(evt);
             }
         });
-        jPanel2.add(btn_sig, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 90, -1, -1));
+        jPanel2.add(btn_sig, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 80, -1, -1));
 
         btn_fin.setText("Fin");
         btn_fin.addActionListener(new java.awt.event.ActionListener() {
@@ -139,7 +130,7 @@ public class registro_buses extends javax.swing.JFrame {
                 btn_finActionPerformed(evt);
             }
         });
-        jPanel2.add(btn_fin, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 90, -1, -1));
+        jPanel2.add(btn_fin, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 80, -1, -1));
 
         btn_elim.setText("Eliminar Registro");
         btn_elim.addActionListener(new java.awt.event.ActionListener() {
@@ -163,7 +154,7 @@ public class registro_buses extends javax.swing.JFrame {
                 btn_contActionPerformed(evt);
             }
         });
-        jPanel2.add(btn_cont, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, -1, -1));
+        jPanel2.add(btn_cont, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 50, 130, -1));
 
         btn_cer.setText("Cerrar");
         btn_cer.addActionListener(new java.awt.event.ActionListener() {
@@ -185,7 +176,7 @@ public class registro_buses extends javax.swing.JFrame {
                 btn_actActionPerformed(evt);
             }
         });
-        jPanel2.add(btn_act, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 60, -1, -1));
+        jPanel2.add(btn_act, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, 80, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -202,13 +193,13 @@ public class registro_buses extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, -1, -1));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 600, 380));
 
         jLabel9.setFont(new java.awt.Font("Montserrat", 1, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Capacidad de Carga");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, -1, -1));
-        jPanel2.add(txt_carga, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 380, 160, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
+        jPanel2.add(txt_carga, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 160, -1));
 
         jLabel1.setFont(new java.awt.Font("Montserrat", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -223,7 +214,7 @@ public class registro_buses extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1044, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -235,7 +226,6 @@ public class registro_buses extends javax.swing.JFrame {
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         int tabla=this.jTable1.getSelectedRow();
-        this.txt_numbus.setText(buses.getValueAt(tabla,0).toString());
         this.txt_mode.setText(buses.getValueAt(tabla,1).toString());
         this.txtPlaca.setText(buses.getValueAt(tabla,2).toString());
         this.txt_año.setText(buses.getValueAt(tabla,3).toString());
@@ -248,7 +238,6 @@ public class registro_buses extends javax.swing.JFrame {
     private void btn_actActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_actActionPerformed
 
         int tabla=this.jTable1.getSelectedRow();
-        arr.get(tabla).setNum_bus(Integer.valueOf(this.txt_numbus.getText()));
         arr.get(tabla).setModelo(this.txt_mode.getText());
         arr.get(tabla).setPlaca(this.txtPlaca.getText());
         arr.get(tabla).setAño(Integer.valueOf(this.txt_año.getText()));
@@ -257,7 +246,7 @@ public class registro_buses extends javax.swing.JFrame {
         arr.get(tabla).setCantidad_pasajeros(Integer.valueOf(this.txt_pasajeros.getText()));
         arr.get(tabla).setCarga(Integer.valueOf(this.txt_carga.getText()));
 
-        buses.setValueAt(this.txt_numbus.getText(),tabla,0);
+       
         buses.setValueAt(this.txt_mode.getText(),tabla,1);
         buses.setValueAt(this.txtPlaca.getText(),tabla,2);
         buses.setValueAt(this.txt_año.getText(),tabla,3);
@@ -277,7 +266,7 @@ public class registro_buses extends javax.swing.JFrame {
 
     private void btn_agregActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregActionPerformed
         buses dat= new buses();
-        dat.setNum_bus(Integer.valueOf(this.txt_numbus.getText()));
+       
         dat.setModelo(this.txt_mode.getText());
         dat.setPlaca(this.txtPlaca.getText());
         dat.setAño(Integer.valueOf(this.txt_año.getText()));
@@ -342,7 +331,6 @@ public class registro_buses extends javax.swing.JFrame {
     this.txt_año.setText("");
     this.txt_color.setText(""); 
     this.txt_numasien.setText("");
-    this.txt_numbus.setText(""); 
     this.txt_pasajeros.setText(""); 
     this.txt_mode.setText(""); 
     this.txt_carga.setText("");
@@ -350,7 +338,6 @@ public class registro_buses extends javax.swing.JFrame {
     
     void pres_datos(int i){
     if(i>=0 && i<arr.size()){
-    this.txt_numbus.setText(String.valueOf(arr.get(i).getNum_bus()));
     this.txt_mode.setText(arr.get(i).getModelo()); 
     this.txtPlaca.setText(arr.get(i).getPlaca()); 
     this.txt_año.setText(String.valueOf(arr.get(i).getAño()));
@@ -418,7 +405,6 @@ public class registro_buses extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -434,7 +420,6 @@ public class registro_buses extends javax.swing.JFrame {
     private javax.swing.JTextField txt_color;
     private javax.swing.JTextField txt_mode;
     private javax.swing.JTextField txt_numasien;
-    private javax.swing.JTextField txt_numbus;
     private javax.swing.JTextField txt_pasajeros;
     // End of variables declaration//GEN-END:variables
 }

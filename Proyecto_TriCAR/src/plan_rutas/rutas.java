@@ -35,7 +35,6 @@ public class rutas extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        TxtNoRuta = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -43,14 +42,10 @@ public class rutas extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         TxtOrigen = new javax.swing.JTextField();
         TxtDestino = new javax.swing.JTextField();
-        TxtConductor = new javax.swing.JTextField();
-        TxtBus = new javax.swing.JTextField();
         TxtFecha = new javax.swing.JTextField();
         TxtHora = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel10 = new javax.swing.JLabel();
@@ -63,6 +58,9 @@ public class rutas extends javax.swing.JFrame {
         btn_ant1 = new javax.swing.JButton();
         btn_sig = new javax.swing.JButton();
         btn_fin = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -75,57 +73,46 @@ public class rutas extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 499, 340, 50));
-        jPanel1.add(TxtNoRuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 190, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 340, 40));
 
         jLabel9.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Hora");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Fecha");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("No.bus");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("No.Conductor");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Destino");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Origen");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nueva ruta");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
-
-        jLabel3.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("No-ruta");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, -1, -1));
-        jPanel1.add(TxtOrigen, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 190, -1));
-        jPanel1.add(TxtDestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, 190, -1));
-        jPanel1.add(TxtConductor, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 190, -1));
-        jPanel1.add(TxtBus, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 190, -1));
-        jPanel1.add(TxtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 380, 190, -1));
-        jPanel1.add(TxtHora, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 430, 190, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_tricar/ICONOS/Recurso 4.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(TxtOrigen, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 190, -1));
+        jPanel1.add(TxtDestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 190, -1));
+        jPanel1.add(TxtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 350, 190, -1));
+        jPanel1.add(TxtHora, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 400, 190, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -142,15 +129,17 @@ public class rutas extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 220, -1, 260));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 600, 260));
 
         jLabel10.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel10.setText("Historial de rutas");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 150, 30));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 50, 150, 30));
 
+        jLabel11.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("No.Empleado");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 50, 90, -1));
-        jPanel1.add(txtEmpleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 50, 240, -1));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, 110, 20));
+        jPanel1.add(txtEmpleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 450, 190, -1));
 
         btn_cont.setText("Contar");
         btn_cont.addActionListener(new java.awt.event.ActionListener() {
@@ -158,7 +147,7 @@ public class rutas extends javax.swing.JFrame {
                 btn_contActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_cont, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 100, -1, -1));
+        jPanel1.add(btn_cont, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 100, 80, -1));
 
         btn_elimi.setText("Eliminar");
         btn_elimi.addActionListener(new java.awt.event.ActionListener() {
@@ -182,7 +171,7 @@ public class rutas extends javax.swing.JFrame {
                 btn_prinActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_prin, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, -1, -1));
+        jPanel1.add(btn_prin, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 90, -1));
 
         btn_ant1.setText("Ant.");
         btn_ant1.addActionListener(new java.awt.event.ActionListener() {
@@ -190,7 +179,7 @@ public class rutas extends javax.swing.JFrame {
                 btn_ant1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_ant1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 130, -1, -1));
+        jPanel1.add(btn_ant1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 140, -1, -1));
 
         btn_sig.setText("Sig.");
         btn_sig.addActionListener(new java.awt.event.ActionListener() {
@@ -198,7 +187,7 @@ public class rutas extends javax.swing.JFrame {
                 btn_sigActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_sig, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 130, -1, -1));
+        jPanel1.add(btn_sig, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 140, -1, -1));
 
         btn_fin.setText("Fin.");
         btn_fin.addActionListener(new java.awt.event.ActionListener() {
@@ -206,13 +195,22 @@ public class rutas extends javax.swing.JFrame {
                 btn_finActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_fin, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 130, -1, -1));
+        jPanel1.add(btn_fin, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 140, -1, -1));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "No-conductor", "00023 - Carlos", "00042- Miguel" }));
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 190, -1));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "No-bus", "4352", "2314", "2441" }));
+        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 190, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_tricar/ICONOS/Recurso 4.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1044, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -233,22 +231,19 @@ public class rutas extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        
         ruta rt = new ruta();
-        rt.setNoRuta(Integer.parseInt(TxtNoRuta.getText()));
+
         rt.setOrigen(TxtOrigen.getText());
         rt.setDestino(TxtDestino.getText());
-        rt.setNoConductor(Integer.valueOf(TxtConductor.getText()));
+ 
         rt.setNoEmpleado(Integer.valueOf(txtEmpleado.getText()));
-        rt.setNoBus(Integer.valueOf(TxtBus.getText()));
+
         rt.setFecha(TxtFecha.getText());
         rt.setHora(Integer.valueOf(TxtHora.getText()));
         
         rtList.add(rt);  
-        
-        TxtBus.setText("");
-        TxtNoRuta.setText("");
+
         TxtOrigen.setText("");
         TxtDestino.setText("");
-        TxtConductor.setText("");
         txtEmpleado.setText("");
         TxtFecha.setText("");
         TxtHora.setText("");
@@ -262,11 +257,8 @@ public class rutas extends javax.swing.JFrame {
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         int Slt=this.jTable1.getSelectedRow();
         
-        TxtBus.setText(String.valueOf(rtList.get(Slt).getNoBus()));
-        TxtNoRuta.setText(String.valueOf(rtList.get(Slt).getNoRuta()));
         TxtOrigen.setText(rtList.get(Slt).getOrigen());
         TxtDestino.setText(rtList.get(Slt).getDestino());
-        TxtConductor.setText(String.valueOf(rtList.get(Slt).getNoConductor()));
         txtEmpleado.setText(String.valueOf(rtList.get(Slt).getNoEmpleado()));
         TxtFecha.setText(rtList.get(Slt).getFecha());
         TxtHora.setText(String.valueOf(rtList.get(Slt).getHora()));
@@ -279,21 +271,21 @@ public class rutas extends javax.swing.JFrame {
 
     private void btn_actActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_actActionPerformed
         int tabla=this.jTable1.getSelectedRow();
-        rtList.get(tabla).setNoRuta(Integer.valueOf(this.TxtNoRuta.getText()));
+    
         rtList.get(tabla).setOrigen(this.TxtOrigen.getText());
         rtList.get(tabla).setDestino(this.TxtDestino.getText());
-        rtList.get(tabla).setNoConductor(Integer.valueOf(this.TxtConductor.getText()));
+
         rtList.get(tabla).setNoEmpleado(Integer.valueOf(this.txtEmpleado.getText()));
-        rtList.get(tabla).setNoBus(Integer.valueOf(this.TxtBus.getText()));
+        
         rtList.get(tabla).setFecha(this.TxtFecha.getText());
         rtList.get(tabla).setHora(Integer.valueOf(this.TxtHora.getText()));
         
-        model.setValueAt(this.TxtNoRuta.getText(),tabla,0);
+
         model.setValueAt(this.TxtOrigen.getText(),tabla,1);
         model.setValueAt(this.TxtDestino.getText(), tabla, 2);
-        model.setValueAt(this.TxtConductor.getText(),tabla,3);
+
         model.setValueAt(this.txtEmpleado.getText(),tabla,4);
-        model.setValueAt(this.TxtBus.getText(),tabla,5);
+        
         model.setValueAt(this.TxtFecha.getText(),tabla,6);
         model.setValueAt(this.TxtHora.getText(),tabla,7);
     }//GEN-LAST:event_btn_actActionPerformed
@@ -312,11 +304,9 @@ public class rutas extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Registro Eliminado");
             }
         }
-        TxtBus.setText("");
-        TxtNoRuta.setText("");
-        TxtOrigen.setText("");
+         TxtOrigen.setText("");
         TxtDestino.setText("");
-        TxtConductor.setText("");
+
         txtEmpleado.setText("");
         TxtFecha.setText("");
         TxtHora.setText("");
@@ -352,11 +342,10 @@ public class rutas extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_finActionPerformed
    void presentar(int i){
     if(i>=0 && i<rtList.size()){
-        this.TxtBus.setText(String.valueOf(rtList.get(i).getNoBus()));
-        this.TxtNoRuta.setText(String.valueOf(rtList.get(i).getNoRuta()));
+        
         this.TxtOrigen.setText(rtList.get(i).getOrigen());
         this.TxtDestino.setText(rtList.get(i).getDestino());
-        this.TxtConductor.setText(String.valueOf(rtList.get(i).getNoConductor()));
+       
         this.txtEmpleado.setText(String.valueOf(rtList.get(i).getNoEmpleado()));
         this.TxtFecha.setText(rtList.get(i).getFecha());
         this.TxtHora.setText(String.valueOf(rtList.get(i).getHora())); 
@@ -417,12 +406,9 @@ public class rutas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField TxtBus;
-    private javax.swing.JTextField TxtConductor;
     private javax.swing.JTextField TxtDestino;
     private javax.swing.JTextField TxtFecha;
     private javax.swing.JTextField TxtHora;
-    private javax.swing.JTextField TxtNoRuta;
     private javax.swing.JTextField TxtOrigen;
     private javax.swing.JButton btn_act;
     private javax.swing.JButton btn_ant1;
@@ -432,11 +418,12 @@ public class rutas extends javax.swing.JFrame {
     private javax.swing.JButton btn_prin;
     private javax.swing.JButton btn_sig;
     private javax.swing.JButton jButton1;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

@@ -55,17 +55,15 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         Tabla_Datos = new javax.swing.JTable();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        txtID = new javax.swing.JTextField();
         ComboBxGen = new javax.swing.JComboBox<>();
         txtRuta = new javax.swing.JTextField();
         txtCondi = new javax.swing.JTextField();
         CheckBoxEqui = new javax.swing.JCheckBox();
+        jLabel4 = new javax.swing.JLabel();
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -75,12 +73,12 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
                 txtEdadActionPerformed(evt);
             }
         });
-        jPanel4.add(txtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 200, -1));
+        jPanel4.add(txtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 200, -1));
 
         jLabel5.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Num de Autobus");
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
 
         jButton4.setText("Principio");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +86,7 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, -1, -1));
+        jPanel4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, -1, -1));
 
         jButton5.setText("Ant.");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +94,7 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 90, -1, -1));
+        jPanel4.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 80, -1, -1));
 
         jButton6.setText("Sig.");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -104,7 +102,7 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 90, -1, -1));
+        jPanel4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 80, -1, -1));
 
         jButton7.setText("Fin");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -112,7 +110,7 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 90, -1, -1));
+        jPanel4.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 80, -1, -1));
 
         btnEliminar.setText("Eliminar Registro");
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -120,35 +118,35 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
                 btnEliminarActionPerformed(evt);
             }
         });
-        jPanel4.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 90, -1, -1));
+        jPanel4.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Nombre");
-        jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
+        jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Edad");
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, -1));
+        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("REGISTRO DE PASAJEROS");
-        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
-        jPanel4.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 200, -1));
+        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+        jPanel4.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 200, -1));
 
         jLabel6.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Num de Asiento");
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
+        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, -1));
 
         cbNum_Autobus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar:", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", " " }));
         cbNum_Autobus.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel4.add(cbNum_Autobus, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, -1, -1));
+        jPanel4.add(cbNum_Autobus, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, 160, -1));
 
         cbNum_Asiento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar:", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
-        jPanel4.add(cbNum_Asiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, -1, -1));
+        jPanel4.add(cbNum_Asiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 160, -1));
 
         btnAgregar.setText("Agregar");
         btnAgregar.addActionListener(new java.awt.event.ActionListener() {
@@ -156,7 +154,7 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
                 btnAgregarActionPerformed(evt);
             }
         });
-        jPanel4.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, 250, 40));
+        jPanel4.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 480, 250, 40));
 
         jButton2.setText("Contar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +162,7 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 60, -1, -1));
+        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 50, -1, -1));
 
         jButton3.setText("Cerrar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -172,7 +170,7 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 480, 250, 40));
+        jPanel4.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, 250, 40));
 
         Tabla_Datos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -184,35 +182,39 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(Tabla_Datos);
 
-        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 630, 210));
+        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 630, 360));
+
+        jLabel8.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Género");
+        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Num Ruta");
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Condición Médica");
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 100, -1));
+
+        jLabel11.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Equipaje");
+        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, -1, -1));
+
+        ComboBxGen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Género", "Femenino", "Masculino", "Otro" }));
+        jPanel4.add(ComboBxGen, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, 200, -1));
+        jPanel4.add(txtRuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 200, -1));
+        jPanel4.add(txtCondi, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 340, 200, -1));
+
+        CheckBoxEqui.setText("Equipaje");
+        jPanel4.add(CheckBoxEqui, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 380, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_tricar/ICONOS/Recurso 4.png"))); // NOI18N
         jLabel4.setText("jLabel4");
         jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 600));
-
-        jLabel7.setText("ID");
-        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 380, -1, -1));
-
-        jLabel8.setText("Género");
-        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 410, -1, -1));
-
-        jLabel9.setText("Num Ruta");
-        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 450, -1, -1));
-
-        jLabel10.setText("Condición Médica");
-        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 480, 100, -1));
-
-        jLabel11.setText("Equipaje");
-        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 520, -1, -1));
-        jPanel4.add(txtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 370, 160, -1));
-
-        ComboBxGen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Género", "Femenino", "Masculino", "Otro" }));
-        jPanel4.add(ComboBxGen, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, -1, -1));
-        jPanel4.add(txtRuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 440, 170, -1));
-        jPanel4.add(txtCondi, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 480, 170, -1));
-
-        CheckBoxEqui.setText("Equipaje");
-        jPanel4.add(CheckBoxEqui, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 520, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -230,13 +232,11 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
      void limpiar(){
     this.txtCondi.setText("");
     this.txtEdad.setText("");
-    this.txtID.setText("");
     this.txtNombre.setText("");
     this.txtRuta.setText("");
     }
        void presentar(int i){
     if(i>=0 && i<arreglo.size()){
-    this.txtID.setText(String.valueOf(arreglo.get(i).getId()));
     this.txtNombre.setText(arreglo.get(i).getNombre()); 
     this.txtEdad.setText(String.valueOf(arreglo.get(i).getEdad()));
     this.ComboBxGen.setSelectedItem(arreglo.get(i).getGenero());
@@ -256,7 +256,6 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
           DefaultTableModel modelo=(DefaultTableModel) Tabla_Datos.getModel();
  
         Object []fila=new Object[9];
-        fila[0]=txtID.getText();
         fila[1]=txtNombre.getText();
         fila[2]=txtEdad.getText();
         fila[3]=(String)ComboBxGen.getSelectedItem();
@@ -383,14 +382,12 @@ public class Registro_Pasajeros extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField txtCondi;
     private javax.swing.JTextField txtEdad;
-    private javax.swing.JTextField txtID;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtRuta;
     // End of variables declaration//GEN-END:variables

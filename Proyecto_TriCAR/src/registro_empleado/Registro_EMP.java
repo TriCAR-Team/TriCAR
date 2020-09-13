@@ -43,10 +43,8 @@ public class Registro_EMP extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         txtId = new javax.swing.JTextField();
         txtNomb = new javax.swing.JTextField();
-        txtBus = new javax.swing.JTextField();
         comboEmp = new javax.swing.JComboBox<>();
         btn_agre = new javax.swing.JButton();
         btn_elimi = new javax.swing.JButton();
@@ -57,15 +55,11 @@ public class Registro_EMP extends javax.swing.JFrame {
         btn_act = new javax.swing.JButton();
         btn_cont = new javax.swing.JButton();
         btn_cerr = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         txtEdad = new javax.swing.JTextField();
         ComBoxGen = new javax.swing.JComboBox<>();
-        txtNumEmp = new javax.swing.JTextField();
-        txtRuta = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -82,12 +76,12 @@ public class Registro_EMP extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 610, 280));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 590, 340));
 
         jLabel6.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Empleado");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, 30));
+        jLabel6.setText("Tipo Empleado");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, 30));
 
         jLabel2.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -103,17 +97,11 @@ public class Registro_EMP extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Empleado");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Num Bus");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, 30));
         jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 180, -1));
         jPanel1.add(txtNomb, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, 180, -1));
-        jPanel1.add(txtBus, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 180, -1));
 
         comboEmp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tipo de Empleado", "Conductor", "Asistente de viaje" }));
-        jPanel1.add(comboEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 180, -1));
+        jPanel1.add(comboEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 180, -1));
 
         btn_agre.setText("Agregar");
         btn_agre.addActionListener(new java.awt.event.ActionListener() {
@@ -121,7 +109,7 @@ public class Registro_EMP extends javax.swing.JFrame {
                 btn_agreActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_agre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 290, -1));
+        jPanel1.add(btn_agre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 500, 290, -1));
 
         btn_elimi.setText("Eliminar");
         btn_elimi.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +117,7 @@ public class Registro_EMP extends javax.swing.JFrame {
                 btn_elimiActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_elimi, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, -1, -1));
+        jPanel1.add(btn_elimi, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 70, -1, -1));
 
         btn_prin.setText("Principio");
         btn_prin.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +125,7 @@ public class Registro_EMP extends javax.swing.JFrame {
                 btn_prinActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_prin, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, -1, -1));
+        jPanel1.add(btn_prin, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 70, -1, -1));
 
         btn_sig.setText("Sig");
         btn_sig.addActionListener(new java.awt.event.ActionListener() {
@@ -145,7 +133,7 @@ public class Registro_EMP extends javax.swing.JFrame {
                 btn_sigActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_sig, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 70, -1, -1));
+        jPanel1.add(btn_sig, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 70, -1, -1));
 
         btn_ant1.setText("Ant");
         btn_ant1.addActionListener(new java.awt.event.ActionListener() {
@@ -153,7 +141,7 @@ public class Registro_EMP extends javax.swing.JFrame {
                 btn_ant1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_ant1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 70, -1, -1));
+        jPanel1.add(btn_ant1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 70, -1, -1));
 
         btn_fin.setText("Fin");
         btn_fin.addActionListener(new java.awt.event.ActionListener() {
@@ -161,7 +149,7 @@ public class Registro_EMP extends javax.swing.JFrame {
                 btn_finActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_fin, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 70, -1, -1));
+        jPanel1.add(btn_fin, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 70, -1, -1));
 
         btn_act.setText("Actualizar");
         btn_act.addActionListener(new java.awt.event.ActionListener() {
@@ -169,7 +157,7 @@ public class Registro_EMP extends javax.swing.JFrame {
                 btn_actActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_act, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 40, -1, -1));
+        jPanel1.add(btn_act, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, 80, -1));
 
         btn_cont.setText("Contar");
         btn_cont.addActionListener(new java.awt.event.ActionListener() {
@@ -177,7 +165,7 @@ public class Registro_EMP extends javax.swing.JFrame {
                 btn_contActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_cont, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 40, -1, -1));
+        jPanel1.add(btn_cont, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 30, 80, -1));
 
         btn_cerr.setText("Cerrar");
         btn_cerr.addActionListener(new java.awt.event.ActionListener() {
@@ -185,29 +173,25 @@ public class Registro_EMP extends javax.swing.JFrame {
                 btn_cerrActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_cerr, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, 290, -1));
+        jPanel1.add(btn_cerr, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 540, 290, -1));
+
+        jLabel7.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Edad");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Género");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
+        jPanel1.add(txtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 180, -1));
+
+        ComBoxGen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Género", "Femenino", "Masculino", "Otro" }));
+        jPanel1.add(ComBoxGen, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 180, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_tricar/ICONOS/Recurso 4.png"))); // NOI18N
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 370, -1));
-
-        jLabel7.setText("Edad");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, -1, -1));
-
-        jLabel8.setText("Género");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 440, -1, -1));
-
-        jLabel9.setText("Num Empleado");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 470, -1, -1));
-
-        jLabel10.setText("Num Ruta");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 500, -1, -1));
-        jPanel1.add(txtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, 170, -1));
-
-        ComBoxGen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Género", "Femenino", "Masculino", "Otro" }));
-        jPanel1.add(ComBoxGen, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 440, -1, -1));
-        jPanel1.add(txtNumEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 470, 180, -1));
-        jPanel1.add(txtRuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 500, 180, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -229,11 +213,8 @@ public class Registro_EMP extends javax.swing.JFrame {
         dat.setNombre(this.txtNomb.getText());
         dat.setEdad(Integer.valueOf(this.txtEdad.getText())); 
         dat.setGenero(this.ComBoxGen.getSelectedItem().toString());
-        dat.setNum_bus(Integer.valueOf(this.txtBus.getText()));
         dat.setEmpleado(this.comboEmp.getSelectedItem().toString());
-        dat.setNum_empleado(Integer.valueOf(this.txtNumEmp.getText()));
-        dat.setNum_ruta(Integer.valueOf(this.txtRuta.getText()));
-      
+       
         arr.add(dat); 
         limpiar(); 
         posi=arr.size(); 
@@ -265,19 +246,15 @@ public class Registro_EMP extends javax.swing.JFrame {
         arr.get(tabla).setNombre(this.txtNomb.getText());
         arr.get(tabla).setEdad(Integer.valueOf(this.txtEdad.getText()));
         arr.get(tabla).setGenero(this.ComBoxGen.getSelectedItem().toString());
-        arr.get(tabla).setNum_bus(Integer.valueOf(this.txtBus.getText()));
         arr.get(tabla).setEmpleado(this.comboEmp.getSelectedItem().toString());
-        arr.get(tabla).setNum_empleado(Integer.valueOf(this.txtNumEmp.getText()));
-        arr.get(tabla).setNum_ruta(Integer.valueOf(this.txtRuta.getText()));
-        
+  
         emple.setValueAt(this.txtId.getText(),tabla,0);
         emple.setValueAt(this.txtNomb.getText(),tabla,1);
         emple.setValueAt(this.txtEdad.getText(), tabla, 2);
         emple.setValueAt(this.comboEmp.getSelectedItem(),tabla,3);
-        emple.setValueAt(this.txtBus.getText(),tabla,4);
+
         emple.setValueAt(this.comboEmp.getSelectedItem(),tabla,5);
-        emple.setValueAt(this.txtNumEmp.getText(),tabla,6);
-        emple.setValueAt(this.txtRuta.getText(),tabla,7);
+ 
     }//GEN-LAST:event_btn_actActionPerformed
 
     private void btn_contActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_contActionPerformed
@@ -318,12 +295,11 @@ public class Registro_EMP extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_finActionPerformed
   
       void limpiar(){
-    this.txtBus.setText("");
+
     this.txtEdad.setText("");
     this.txtId.setText("");
     this.txtNomb.setText("");
-    this.txtNumEmp.setText("");
-    this.txtRuta.setText("");
+   
     }
        void pres_datos(int i){
     if(i>=0 && i<arr.size()){
@@ -331,10 +307,9 @@ public class Registro_EMP extends javax.swing.JFrame {
     this.txtNomb.setText(arr.get(i).getNombre()); 
     this.txtEdad.setText(String.valueOf(arr.get(i).getEdad()));
     this.ComBoxGen.setSelectedItem(arr.get(i).getGenero());
-    this.txtBus.setText(String.valueOf(arr.get(i).getNum_bus()));
+
     this.comboEmp.setSelectedItem(arr.get(i).getEmpleado()); 
-    this.txtNumEmp.setText(String.valueOf(arr.get(i).getNum_empleado()));
-    this.txtRuta.setText(String.valueOf(arr.get(i).getNum_ruta()));
+   
     
     }
     }
@@ -394,23 +369,17 @@ public class Registro_EMP extends javax.swing.JFrame {
     private javax.swing.JButton btn_sig;
     private javax.swing.JComboBox<String> comboEmp;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField txtBus;
     private javax.swing.JTextField txtEdad;
     private javax.swing.JTextField txtId;
     private javax.swing.JTextField txtNomb;
-    private javax.swing.JTextField txtNumEmp;
-    private javax.swing.JTextField txtRuta;
     // End of variables declaration//GEN-END:variables
 }
